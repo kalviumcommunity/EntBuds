@@ -1,0 +1,40 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.logo{
+    height: 98px;
+    width: 147px;
+}
+
+ span{
+    color: white;
+    cursor: pointer;
+}
+
+ span:hover{
+    color: rgb(252, 0, 0);
+}
+
+.container{
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+img{
+    margin-right: 20px;
+    margin-left: -56px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+span{
+    margin-right: 20px;
+    cursor: pointer;
+}
