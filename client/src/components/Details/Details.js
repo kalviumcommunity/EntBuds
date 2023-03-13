@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react"
 import "./Details.css"
 import { useParams } from "react-router-dom"
+import {Link} from "react-router-dom";
+import FilmDetail from "./Reviewpage";
 
 const Movie = () => {
     const [MovieDetail, setMovie] = useState()
@@ -88,6 +90,29 @@ const Movie = () => {
                         </>
                     ))
                 }
+            </div>
+
+            <FilmDetail />
+
+            
+
+
+        <br>
+            </br>
+            <br></br>
+            <div className="inputs">
+            <div className="review-section">
+                <h2 color="red">Reviews</h2>
+                <input type='text' className="review"  placeholder = 'Type your review here'></input>
+
+            </div>
+
+
+            <div className="fantheories">
+                <h2 color="red">Let's Discuss</h2>
+                <input type='text' className="theory"  placeholder = 'What do you think about this?'></input>
+
+            </div>
             </div>
         </div>
     )
