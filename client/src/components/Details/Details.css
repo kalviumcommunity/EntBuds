@@ -170,6 +170,7 @@
     color: white;
 }
 
+
 .review{
     width: 84vw;
     margin-bottom: 2rem;
@@ -184,7 +185,6 @@
 }
 
 
-
 .review::placeholder{
     color: #fff;
 }
@@ -192,6 +192,7 @@
 .review-section h2{
     color: red;
     text-align: start;
+
 }
 
 .theory{
@@ -215,4 +216,5 @@
     color: red;
     text-align: start;
 }
+
 

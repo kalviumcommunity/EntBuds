@@ -4,7 +4,17 @@ import { useParams } from "react-router-dom"
 import {Link} from "react-router-dom";
 import FilmDetail from "./Reviewpage";
 
+
 const Movie = () => {
+
+    const [popularf, setPopularf] = useState([])
+
+    useEffect(() => {
+        fetch("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US")
+        .then(res => res.json())
+        .then(data => setPopularf(data.results))
+    }, [])
+
     const [MovieDetail, setMovie] = useState()
     const { id } = useParams()
 
@@ -24,6 +34,20 @@ const Movie = () => {
 
         // const mergedArray = [...array1, ...array2]
     }
+
+    // const FilmDetail = ({ filmId }) => {
+    //     const [reviews, setReviews] = useState([]);
+      
+    //     useEffect(() => {
+    //       const fetchReviews = async () => {
+    //         const response = await axios.get(
+    //           `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${MovieDetail ? MovieDetail.original_title: ""} review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`
+    //         );
+    //         setReviews(response.data.items);
+    //       };
+    //       fetchReviews();
+    //     }, [filmId]);
+      
 
     return (
         <div className="movie">
@@ -94,18 +118,20 @@ const Movie = () => {
 
             <FilmDetail />
 
-            
 
 
         <br>
             </br>
             <br></br>
+
             <div className="inputs">
+
             <div className="review-section">
                 <h2 color="red">Reviews</h2>
                 <input type='text' className="review"  placeholder = 'Type your review here'></input>
 
             </div>
+
 
 
             <div className="fantheories">
@@ -114,8 +140,10 @@ const Movie = () => {
 
             </div>
             </div>
+
         </div>
     )
 }
+
 
 export default Movie
