@@ -2,6 +2,8 @@ import React from 'react';
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 import cinebuds from './entbuds.png'
+import {Button} from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person'
 
 const Navbar = () => {
   return (
@@ -13,8 +15,14 @@ const Navbar = () => {
             
             <Link to = "/movies/popular" style={{textDecoration: "none"}}><span>Popular</span></Link>
             <Link to = "/movies/top_rated" style={{textDecoration: "none"}}><span>Top Rated</span></Link>
+
+            </div>
             
-          </div>
+            <div className='right'>
+            <Button variant="contained" startIcon={<PersonIcon/>}  size='small' style={{fontSize:'1.5rem', background: 'red',
+              color:'black',display:'flex', alignItems:'center'}}>Login</Button>
+            </div>
+          
         </div>
       </nav>
     </div>
