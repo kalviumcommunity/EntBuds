@@ -9,24 +9,8 @@ const FilmDetail = ({ filmId, title }) => {
 
   useEffect(() => {
     const fetchReviews = async () => {
-<<<<<<< HEAD
-      console.log(
-        "Testing URL :",
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${
-          MovieDetail ? MovieDetail.original_title : ""
-        }review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`
-=======
+      
 
-      console.log("Testing URL :", `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${MovieDetail ? MovieDetail.original_title: ""} review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`)
-
-
-      const response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${MovieDetail ? MovieDetail.original_title: ""} review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`
->>>>>>> a999a4da6f61f55d65725fe0c14d5dac496ebd30
-      );
-console.log(
-  MovieDetail
-)
       const response = await axios.get(
         `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${title}review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`
       );
@@ -44,8 +28,8 @@ console.log(
 
       <Carousel
         showThumbs={false}
-        autoPlay={true}
-        transitionTime={21}
+        autoPlay={false}
+        transitionTime={2100}
         infiniteLoop={true}
         showStatus={false}
       >

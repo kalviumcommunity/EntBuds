@@ -21,7 +21,7 @@ function Home() {
         <Carousel
         showThumbs = {false}
         autoPlay = {true}
-        transitionTime = {21}
+        transitionTime = {700}
         infiniteLoop = {true}
         showStatus = {false}
         >
@@ -30,7 +30,9 @@ function Home() {
                     <Link style = {{textDecoration:"none", color:"white"}} to={`/movie/${movie.id}`} >
                       <div className='container1'>
                     <div className='partImage'>
-                        <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
+                        <img 
+                        alt='thumnsil'
+                        src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                     </div>
                     <div className='partimage-overlay'>
                       <div className='partimage-title'>{movie ? movie.original_title: ""}</div>

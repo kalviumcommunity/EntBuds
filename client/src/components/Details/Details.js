@@ -28,25 +28,10 @@ const Movie = () => {
         .then(res => res.json())
         .then(data => setMovie(data))
 
-        // const data2 = fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US`)
-        // .then(res => res.json())
-        // .then(data => setMovie(data))
-
-        // const mergedArray = [...array1, ...array2]
+       
     }
 
-    // const FilmDetail = ({ filmId }) => {
-    //     const [reviews, setReviews] = useState([]);
-      
-    //     useEffect(() => {
-    //       const fetchReviews = async () => {
-    //         const response = await axios.get(
-    //           `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${MovieDetail ? MovieDetail.original_title: ""} review&type=video&key=AIzaSyDcPfOvNAZ2PwHX2lrX1oHfI_D_TJLkNgk`
-    //         );
-    //         setReviews(response.data.items);
-    //       };
-    //       fetchReviews();
-    //     }, [filmId]);
+    
       
 
     return (
@@ -117,7 +102,7 @@ const Movie = () => {
             </div>
 
             {MovieDetail && (
-    <FilmDetail title={MovieDetail ? MovieDetail.original_title : "Avatar"} />
+    <FilmDetail title={MovieDetail ? MovieDetail.original_title : ""} />
 )}
 
             
