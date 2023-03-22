@@ -116,7 +116,11 @@ const Movie = () => {
                 }
             </div>
 
-            <FilmDetail />
+            {MovieDetail && (
+    <FilmDetail title={MovieDetail ? MovieDetail.original_title : "Avatar"} />
+)}
+
+            
 
 
 
