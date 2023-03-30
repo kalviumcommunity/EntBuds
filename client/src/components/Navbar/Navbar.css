@@ -34,6 +34,11 @@ img{
     align-items: center;
 }
 
+.right{
+  margin-top: 12px;
+  margin-right: -38px;
+
+}
 span{
     margin-right: 20px;
     cursor: pointer;

@@ -2,6 +2,7 @@
   import Skeleton, {SkeletonTheme} from "react-loading-skeleton"
   import "./Card.css"
   import { Link } from "react-router-dom";
+  
 
 
   const Cards =  ({movie}) => {
@@ -26,7 +27,7 @@
       :
       <Link to={`/movie/${movie.id}`} style = {{textDecoration: "none", color: "white"}}>
         <div className="card">
-          <img className="cards-img" src={`https://image.tmdb.org/t/p/original${movie?movie.poster_path:""}`} />
+          <img className="cards-img" alt={""} src={`https://image.tmdb.org/t/p/original${movie?movie.poster_path:""}`} />
           <div className="card-overlay">
             <div className="card-title">{movie?movie.original?.title:""}</div>
             <div className="card-runtime">

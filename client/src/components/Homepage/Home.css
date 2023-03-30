@@ -51,7 +51,7 @@
     display: flex;
     text-align: left;
     width: 50%;
-} */
+} 
 
 .container1{
     position: relative;
@@ -61,4 +61,8 @@
 .partimage-overlay{
     position: absolute;
     
+}
+
+@media (min-width: 200px) {
+    .partimage-desc  {display: none;}
 }
