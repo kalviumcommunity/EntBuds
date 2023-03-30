@@ -9,7 +9,7 @@ import Movie from './components/Details/Details';
 function App() {
   return (
     <div className="App">
-      
+            
       <Router>
       <Navbar />
         <Routes>

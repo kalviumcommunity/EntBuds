@@ -62,3 +62,7 @@
     position: absolute;
     
 }
+
+@media (min-width: 200px) {
+    .partimage-desc  {display: none;}
+}

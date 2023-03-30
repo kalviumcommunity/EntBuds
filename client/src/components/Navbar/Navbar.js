@@ -39,7 +39,7 @@ const Navbar = () => {
                 }}
                 onClick={logout}
               >
-                Log Out
+                Log Out {user.name}
               </Button>
             </div>
           ) : (
@@ -60,8 +60,9 @@ const Navbar = () => {
                 Login
               </Button>
             </div>
-          )}
-          {user.name}
+          )
+          }
+          
         </div>
       </nav>
     </div>
